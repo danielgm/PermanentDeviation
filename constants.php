@@ -3,6 +3,20 @@
 	$PERIOD_S = (60*4); // seconds
 	$MAX_REPLAY_TIME_SPAN = (2*24*60*60); // two days
 	$MAX_REPLAY_TIME = (5*60); // 5 min
+	$MIN_NOTIFICATION_INTERVAL = 60 * 60; // one hour
+	$NOTIFICATION_MESSAGES = [
+		"Somebody set us up the code. %s",
+		"Fresh generative art just posted on Permanent Deviation. %s",
+		"Try your hand at creative coding? %s",
+		"Collaborative coding happening now! %s",
+		"Coding is better with company. Contribute at %s",
+		"Coding doesn't have to be lonely. See what just got posted at %s",
+		"Code party at Permanent Deviation! %s",
+		"Somebody just made some art and you can riff on their code at %s",
+		"Code jam happening now at Permanent Deviation %s",
+		"Friends don't let friends code alone. %s #codejam",
+		"Curious about Processing? Live coding happening now! %s"
+	];
 	//$MAX_REPLAY_TIME = 10; // 5 min
 	//
 	// REMOVE MAGIC QUOTES, ala http://php.net/manual/en/security.magicquotes.disabling.php
