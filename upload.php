@@ -42,7 +42,7 @@
 			$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token, $access_token_secret);
 			$content = $connection->get("account/verify_credentials");
 			if ($content) {
-				$message = $NOTIFICATION_MESSAGES[rand(count($NOTIFICATION_MESSAGES) - 1)];
+				$message = $NOTIFICATION_MESSAGES[rand(0, count($NOTIFICATION_MESSAGES) - 1)];
 				$connection->post("statuses/update", array("status" =>
 					sprintf($message, "http://permanentdeviation.com")));
 			}
